@@ -284,17 +284,46 @@
 // 1-1000 arasındaki asal sayıları ekrana yazdıran uygulama
 
 
-for (int i = 2; i < 100; i++)
+
+//// Asal Sayıları bulan kod örneği
+//int sayac;
+//for (int i = 2; i < 1000; i++)
+//{
+//	sayac = 0;
+//	for (int k = 2; k < i; k++)
+//	{
+
+//		if (i % k == 0)
+//		{
+//			sayac++;
+//		}
+
+//	}
+//	if (sayac == 0) {
+
+//		Console.WriteLine("Asal Sayı : {0}", i);
+
+//	}
+
+//}
+
+
+//
+
+long sayi1 = 0;
+long sayi2 = 1;
+
+for (int i = 3; i < 100; i++)
 {
 
-	for (int k = 2; k < i; k++)
-	{
+    long fibo = sayi1 + sayi2;
 
-		if (i % k == 0)
-		{
+    Console.WriteLine(fibo);
+    sayi1 = sayi2;
+    sayi2 = fibo;
 
-		}
-		Console.WriteLine(i);
-	}
 }
+
+// 1 ile 49 arasında 6 adet sayı alınız
+// 1 ile 49 arasında 6 adet random sayı oluşturacaksınız
 
