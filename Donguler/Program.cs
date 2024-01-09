@@ -286,6 +286,7 @@
 
 
 //// Asal Sayıları bulan kod örneği
+///
 //int sayac;
 //for (int i = 2; i < 1000; i++)
 //{
@@ -310,20 +311,54 @@
 
 //
 
-long sayi1 = 0;
-long sayi2 = 1;
 
-for (int i = 3; i < 100; i++)
-{
+// Finonacci sayılarını bulma
+//long sayi1 = 0;
+//long sayi2 = 1;
 
-    long fibo = sayi1 + sayi2;
+//for (int i = 3; i < 100; i++)
+//{
 
-    Console.WriteLine(fibo);
-    sayi1 = sayi2;
-    sayi2 = fibo;
+//    long fibo = sayi1 + sayi2;
 
-}
+//    Console.WriteLine(fibo);
+//    sayi1 = sayi2;
+//    sayi2 = fibo;
+
+//}
 
 // 1 ile 49 arasında 6 adet sayı alınız
 // 1 ile 49 arasında 6 adet random sayı oluşturacaksınız
 
+
+
+// While Döngüsü
+
+
+//int i = 0;
+
+//while (i<10)
+//{
+//    Console.WriteLine(i);
+//    i++;
+//}
+
+
+// while ile çarpım tablosu
+
+int i = 0;
+
+while (i<=10)
+{
+   
+    int k = 1;
+    Console.WriteLine("-------------------");
+    while (k<=10)
+	{
+		Console.WriteLine("{0}x {1}={2}", i, k, i * k);
+		k++;
+	}
+
+    i++;
+
+}
